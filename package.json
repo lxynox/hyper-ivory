@@ -1,0 +1,17 @@
+{
+  "name": "hyper-ivory",
+  "version": "0.0.1",
+  "keywords": [
+    "hyper",
+    "hyper-theme"
+  ],
+  "description": "a simple yet neat hyper theme",
+  "main": "index.js",
+  "repository": {
+    "url": "git@gh-lxynox:lxynox/hyper-ivory.git",
+    "type": "git"
+  },
+  "author": "lxynox <lxynox@gmail.com>",
+  "license": "MIT",
+  "dependencies": {}
+}
