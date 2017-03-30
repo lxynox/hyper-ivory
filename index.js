@@ -1,4 +1,21 @@
-const backgroundColor = 'ivory'
+const bgColors = [
+	'#ffffff',
+	'rgba(253, 245, 221, 0.6)',
+	'ivory',
+	'azure',
+	'whitesmoke',
+	'aliceblue',
+	'snow',
+	'seashell',
+	'mintcream',
+	'linen',
+	'lightyellow',
+	'honeydew',
+	'floralwhite',
+	'ghostwhite'
+]
+
+const backgroundColor = rand(bgColors)
 	, foregroundColor = '#607D8B'
 	, accent = 'blueviolet'
 	, secondary = 'darkseagreen'
@@ -52,4 +69,20 @@ exports.decorateConfig = (config) => {
 			}
 		`
 	})
+}
+
+function rand(arr = [], min = 0, max) {
+	if (!Array.isArray(arr)) {
+		throw new Error('First argument must be array!')
+	}
+	max = max || arr.length
+	if (!Number.isInteger(min) || !Number.isInteger(max)) {
+		throw new Error('Second/third argument must be integer!')
+	}
+	if (min > max) {
+		throw new Error('Min index can not be greater than max index!')
+	}
+	const delta = max - min
+	const randIndex = min + Math.floor(delta * Math.random())
+	return arr[randIndex]
 }
