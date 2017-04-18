@@ -9,7 +9,6 @@ const bgColors = [
 	'seashell',
 	'mintcream',
 	'linen',
-	'lightyellow',
 	'honeydew',
 	'floralwhite',
 	'ghostwhite'
@@ -29,7 +28,7 @@ const red = 'darksalmon'
 
 exports.decorateConfig = (config) => {
 	return Object.assign({}, config, {
-		fontFamily: 'Monaco, Helvetica Neue, monospace',
+		fontFamily: 'Source Code Pro for Powerline, Helvetica Neue, monospace',
 		cursorShape: 'UNDERLINE',
 		backgroundColor,
 		foregroundColor,
